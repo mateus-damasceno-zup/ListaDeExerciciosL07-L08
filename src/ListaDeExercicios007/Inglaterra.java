@@ -19,4 +19,16 @@ public class Inglaterra extends Pais {
     public void setVizinhos(List<Pais> vizinhos) {
         this.vizinhos = vizinhos;
     }
+
+    public List<Pais> vizinhosEmComum(Pais pais) {
+        List<Pais> vizinhosEmComum = new ArrayList<>();
+
+        for (Pais p : vizinhos) {
+            if (p.isVizinho(vizinhos)) {
+                vizinhosEmComum.add(p);
+            }
+        }
+
+        return vizinhosEmComum;
+    }
 }

@@ -40,6 +40,7 @@ public abstract class Pais {
         this.dimensao = dimensao;
     }
 
+    public abstract List<Pais> vizinhosEmComum(Pais pais);
     public boolean isVizinho(List<Pais> vizinhos){
         int i=0;
         Pais vizinho = vizinhos.get(i);
@@ -59,7 +60,6 @@ public abstract class Pais {
 
         return populacao.divide(dimensao,mc);
     }
-
     @Override
     public String toString() {
         return "Pais{" +
