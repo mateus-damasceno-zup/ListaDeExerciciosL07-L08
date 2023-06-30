@@ -9,23 +9,10 @@ public class Produto {
         this.nome = nome;
         this.preco = preco;
     }
-    public Produto(){
 
-    }
+
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public Double getPreco() {
-        return preco;
-    }
-
-    public void setPreco(Double preco) {
-        this.preco = preco;
     }
 
     @Override
@@ -33,6 +20,6 @@ public class Produto {
         return "Produto{" +
                 "nome='" + nome + '\'' +
                 ", preco=" + preco +
-                '}';
+                '}'+"\n";
     }
 }

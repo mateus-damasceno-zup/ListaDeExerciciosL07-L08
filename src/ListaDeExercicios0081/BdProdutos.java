@@ -14,8 +14,9 @@ public class BdProdutos {
    public void iniciarBancoProdutos(){
        adicionarProduto(new Produto("martelo de desempenar vidro",99.00));
        adicionarProduto(new Produto("Espelho anti-reflexo",100.0));
-
-
+       adicionarProduto(new Produto("serrote banguela", 50.00));
+       adicionarProduto(new Produto("água gasosa", 10.00));
+       adicionarProduto(new Produto("estátua do homem invisível",2222.34));
    }
 
    public void adicionarProduto(Produto produto){
@@ -45,4 +46,6 @@ public class BdProdutos {
         produtos.remove(produto);
         System.out.println("item removido");
     }
+
+
 }
